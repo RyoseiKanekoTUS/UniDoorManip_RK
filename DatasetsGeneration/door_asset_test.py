@@ -95,7 +95,7 @@ print("Loading asset '%s' from '%s'" % (asset_file, asset_root))
 cartpole_asset = gym.load_asset(sim, asset_root, asset_file, asset_options)
 
 # initial root pose for cartpole actors
-with open("../generated_datasets/round_door_datasets/99665029962014/bounding_box.json", "r") as f:
+with open("./generated_datasets/round_door_datasets/99665029962014/bounding_box.json", "r") as f:
     bounding_box = json.load(f)
     min_b = bounding_box["min"]
 # with open("./3dware_fridge/9961409/bounding_box.json", "r") as f:
